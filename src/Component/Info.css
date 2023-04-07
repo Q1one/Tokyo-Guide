@@ -1,0 +1,43 @@
+.Info {
+    --c_1: #fff;
+    --c_2: #8f1d21;
+    --tTime: 800ms;
+    position: relative;
+    overflow: hidden;
+}
+.infoGroup {
+    display: flex;
+    flex-direction: row;
+
+    gap: 5px;
+}
+.infLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.infRight {
+    flex: 2;
+    
+    border: 5px solid var(--c_1);
+
+    height: 100vh;
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 15rem;
+}

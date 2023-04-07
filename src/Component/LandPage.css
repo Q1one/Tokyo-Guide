@@ -1,0 +1,107 @@
+.LandPage {
+    --c_1: #fff;
+    --c_2: #8f1d21;
+    --tTime: 800ms;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
+
+    text-align: center;
+
+    width: 100%;
+    height: 100vh;  
+
+    padding: 10rem;
+
+    background: var(--c_1);
+    color: var(--c_2);
+
+    overflow: hidden;
+}
+
+.title {
+    --fSize: 10rem;
+    font-family: 'Aboreto', cursive;
+}
+.title h1{
+    font-size: var(--fSize);
+    -webkit-text-stroke: 1px #8f1d21;
+}
+.title h2 {
+    font-size: calc(var(--fSize)/2);
+    font-family: 'Aboreto', cursive;
+}
+
+
+
+
+
+
+.LandPage nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    z-index: 10;
+}
+.LandPage nav a {
+    text-align: start;
+    text-decoration: none;
+    
+    padding: 1rem;
+
+    color: var(--c_2);
+    transition: var(--tTime);
+}
+
+
+
+.arrow {
+    position: absolute;
+    right: 25rem;
+
+    text-decoration: none;
+    color: var(--c_2);
+
+    animation: atention var(--tTime) infinite;
+}
+@keyframes atention {
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.circle {
+    --size: 50vw;
+
+    position: absolute;
+    bottom : calc(var(--size)/-2);
+    left: calc(var(--size)/-2);
+
+    width: var(--size);
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+    transition: var(--tTime);
+
+    z-index: 5;
+
+    background: var(--c_2);
+}
+.LandPage:hover .circle,
+.LandPage:focus .circle {
+    bottom : calc(var(--size)/2);
+}
+.LandPage:hover nav a,
+.LandPage:focus nav a {
+    color: var(--c_1);
+}
