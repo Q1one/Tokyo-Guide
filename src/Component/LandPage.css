@@ -109,34 +109,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     .LandPage {
-        --c_1: #fff;
-        --c_2: #8f1d21;
-        --tTime: 800ms;
         align-items: center;
         justify-content: center;
 
