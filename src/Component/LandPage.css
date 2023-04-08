@@ -104,3 +104,81 @@
 .LandPage:focus nav a {
     color: var(--c_1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .LandPage {
+        --c_1: #fff;
+        --c_2: #8f1d21;
+        --tTime: 800ms;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+    }
+    
+    .title {
+        --fSize: 9rem;
+    }
+    .title h2 {
+        font-size: calc(var(--fSize)/2);
+    }
+    
+    
+    
+    
+    
+    
+    .LandPage nav a {
+        font-size: 1.4rem;
+    }
+    
+
+    
+    .arrow {
+        position: absolute;
+        left: 40%;
+        bottom: calc(50%-var(--fSize));
+    }
+
+
+    .circle {
+        --size: 50vh;
+    
+        position: absolute;
+        bottom : calc(-var(--size));
+        left: calc(-var(--size));
+
+        transition: calc(var(--tTime)*3);
+    }
+    .LandPage:hover .circle,
+    .LandPage:focus .circle {
+        bottom : calc(var(--size) + var(--size)/2);
+    }
+}
