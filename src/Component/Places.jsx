@@ -1,4 +1,5 @@
 import "./Places.css"
+import Divider from "./Divider"
 import { GrChapterNext } from "react-icons/gr";
 
 import React, { useState } from "react";
@@ -14,19 +15,19 @@ function Places() {
 
   return (
     <div className="Places" id="PTV">
-
         {places.map((place, index) => (
-            <div className="pInfo" style={{ transform: `translateX(-${currentImage * 100}%)` }}>
-                <img key={index} src={place.imgUrl} alt={place.title}/>
+          <div key={index} className="pInfo" style={{ transform: `translateX(-${currentImage * 100}%)` }}>
+                <Divider/>
+                <img src={place.imgUrl} alt={place.title}/>
                 <h2>{place.title}</h2>
             </div>
         ))}
 
-
-      <button onClick={handleNextClick}>
-        NEXT
-        <GrChapterNext className="rBtn" size={40}/>
-      </button>
+    <button onClick={handleNextClick}>
+      NE
+      <GrChapterNext className="rBtn" size={50}/>
+      XT
+    </button>
 
     </div>
   );
