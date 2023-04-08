@@ -23,10 +23,6 @@ function LandPage() {
             <div className="circle"></div>
 
             <Div_btm/>
-            
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
-            </style>
         </div>
     )
 }

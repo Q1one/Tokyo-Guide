@@ -1,14 +1,16 @@
 import "./Info.css"
-
-import infos from "./info.json" 
 import Divider from "./Divider"
+import Div_btm from "./Div_btm";
+
+import infos from "./../assets/info.json"
+
 
 function Info() {
     return (
         <div className="Info" id="INF">
             <Divider/>
             {infos.map((info) => (
-                <div className="infoGroup">
+                <div key={info.key} className="infoGroup">
                     <div className="infLeft">
                         <h2>{info.title}</h2>
                         <p>{info.desc}</p>
@@ -17,6 +19,7 @@ function Info() {
                     </div>
                 </div>
             ))}
+            <Div_btm/>
         </div>
     )
 }

@@ -25,7 +25,6 @@
 
 .title {
     --fSize: 10rem;
-    font-family: 'Aboreto', cursive;
 }
 .title h1{
     font-size: var(--fSize);
@@ -33,7 +32,6 @@
 }
 .title h2 {
     font-size: calc(var(--fSize)/2);
-    font-family: 'Aboreto', cursive;
 }
 
 
@@ -54,6 +52,7 @@
     z-index: 10;
 }
 .LandPage nav a {
+    font-size: 1.2rem;
     text-align: start;
     text-decoration: none;
     
@@ -81,7 +80,7 @@
 }
 
 .circle {
-    --size: 50vw;
+    --size: 100vh;
 
     position: absolute;
     bottom : calc(var(--size)/-2);

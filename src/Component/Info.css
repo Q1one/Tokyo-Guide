@@ -3,13 +3,9 @@
     --c_2: #8f1d21;
     --tTime: 800ms;
     position: relative;
-    overflow: hidden;
 }
 .infoGroup {
     display: flex;
-    flex-direction: row;
-
-    gap: 5px;
 }
 .infLeft {
     flex: 1;
@@ -18,12 +14,33 @@
     align-items: center;
     justify-content: center;
 
+    width: 25%;
+
+    gap: 10px;
+
     padding: 20px;
 
     text-align: center;
+
+    background: var(--c_2);
 }
 
+.infLeft *{
+    width: 100%;
 
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background: var(--c_1);
+    color: var(--c_2);
+}
+.infLeft h2 {
+    font-size: 2.7rem;
+}
+.infLeft p {
+    font-size: 1.1rem;
+}
 
 
 
@@ -33,7 +50,8 @@
 .infRight {
     flex: 2;
     
-    border: 5px solid var(--c_1);
+    border: 2.5px solid var(--c_1);
+    border-radius: 10px;
 
     height: 100vh;
 
