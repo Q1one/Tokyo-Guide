@@ -59,3 +59,41 @@
     background-attachment: fixed;
     background-position: 15rem;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .infoGroup {
+        display: block;
+    }
+    .infLeft {
+        width: 100%;
+    }
+    
+    .infLeft h2 {
+        font-size: 3rem;
+    }
+    .infLeft p {
+        font-size: 1.1rem;
+    }
+    
+    
+    
+    
+    
+    
+    .infRight {
+        border: 0 solid var(--c_1);
+    
+        height: 400px;
+    
+        background-attachment: local;
+        background-position: 0;
+    }
+}
