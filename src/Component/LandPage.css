@@ -119,7 +119,7 @@
     }
     
     .title {
-        --fSize: 9rem;
+        --fSize: 7rem;
     }
     .title h2 {
         font-size: calc(var(--fSize)/2);

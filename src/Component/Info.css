@@ -51,7 +51,7 @@
     flex: 2;
     
     border: 2.5px solid var(--c_1);
-    border-radius: 10px;
+    border-radius: 0;
 
     height: 100vh;
 
