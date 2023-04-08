@@ -119,7 +119,7 @@
     }
     
     .title {
-        --fSize: 7rem;
+        --fSize: 5rem;
     }
     .title h2 {
         font-size: calc(var(--fSize)/2);
@@ -131,7 +131,7 @@
     
     
     .LandPage nav a {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
 
